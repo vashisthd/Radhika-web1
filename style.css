@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        align-items: flex-start; /* Align links to the left */
+    }
+
+    .navbar a {
+        margin: 5px 0; /* Reduce space between links */
+    }
+}
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.home a{
+    color: var(--text-color);
+}
+
+.home header{
+    position: fixed; /* Fix header to the top of the viewport */
+    top: 0; /* Align to the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 1000; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg-color);
+    /* position: fixed; */
+    width: 100%;
+}
+
+.home .name{
+    font-size: 1.7rem;
+    padding-left: 6rem;
+    padding-top: 1.5rem;
+    font-weight: 600;
+    padding-right: 20rem;
+}
+
+.home .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    font-size: 1.2rem;
+    padding-left: 6rem;
+    padding-top: 1.5rem;
+    font-weight: 700;
+}
+
+
+.home .navbar a{
+    padding-left: 1rem;
+}
+
+.home .navbar a:hover{
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.home .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container section{
+    padding-top: 4rem;
+    padding-left: 15rem;
+}
+
+
+.home main{
+    padding-top: 13.1rem;
+    padding-left: 6rem;
+    /* max-width: 30rem; */
+}
+
+.home main h1{
+    font-size: 4rem;
+}
+
+.home main h3{
+    font-size: 2rem;
+    -webkit-text-stroke: 0.7px var(--main-color);
+    color: transparent;
+    padding-bottom: 1.5rem;
+    max-width: 21rem;
+}
+
+.home main h3:hover{
+    color: #00abf0;
+    transition: all 0.5s;
+}
+
+.home main .description{
+    max-width: 40rem;
+}
+
+.home .btns{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 22rem;
+}
+
+.home .btns button{
+    font-size: 1.1rem;
+    padding:0.7rem 2.2rem;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    border: 0.1rem solid black;
+    transition: 0.8s;
+}
+
+.home .btns #btn2{
+    border-color: var(--main-color);
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
+
+.home .btns #btn1{
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    border-color: var(--main-color);
+}
+
+.home .btns #btn2:hover{
+    background-color: var(--bg-color);
+    transition: 0.6s;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.home .btns #btn1:hover{
+    background-color: var(--main-color);
+    transition: 0.8s;
+    color: var(--bg-color);
+    border-color: var(--main-color);
+    cursor: pointer;
+}
+
+.home footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 20rem;
+    padding-right: 4rem;
+    padding-bottom: 4.8rem;
+    padding-top: 4rem;
+}
+
+.home footer a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home footer i{
+    font-size: 2rem;
+    color: var(--main-color);
+    border: 0.1rem solid var(--main-color);
+    border-radius: 20rem;
+    padding: 0.5rem;
+}
+
+.home footer i:hover{
+    transition: 0.5s;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    
+}
+
+.about{
+    background-color: var(--second-bg-color);
+}
+
+.about header{
+    padding-top: 4rem;
+    padding-left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about header h1{
+    font-size: 4rem;
+    padding-right: 2rem;
+}
+
+.about header h1 span{
+    color: var(--main-color);
+}
+
+.about main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#more_data{
+    display: none;
+}
+
+.about main .img{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.about main img{
+    height: 180px;
+    width: 180px;
+    border-radius: 190rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.about main h2{
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.about main p{
+    max-width: 55rem;
+    text-align: center;
+}
+
+.about footer{
+    padding-top: 3rem;
+    padding-bottom: 4.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about footer button{
+    border-color: var(--main-color);
+    color: var(--second-bg-color);
+    background-color: var(--main-color);
+    font-size: 1.1rem;
+    padding:0.7rem 2.2rem;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--main-color);
+    transition: 0.8s;
+}
+
+.about footer button:hover{
+    background-color: var(--second-bg-color);
+    transition: 0.6s;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.education h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 7.2rem;
+    padding-bottom: 1rem;
+}
+
+.education h2 span{
+    color: var(--main-color);
+}
+
+.education .education-row{
+    display: flex;
+    flex-direction: row;
+    max-width: 80rem;
+}
+
+
+.education-row .education-column .title{
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+.education-row .education-column .education-box{
+    /* border-left: 0.1rem solid var(--main-color); */
+    padding-right: 3rem;
+}
+
+.education-box .education-content{
+    padding-left: 1.5rem;
+}
+
+.education-content .content{
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.education-content .content:hover{
+    background-color: var(--second-bg-color);
+    transition: 0.5s;
+}
+
+.content .year,
+.content i{
+    color: var(--main-color);
+}
+
+.mySkills{
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySkills h1{
+    font-size: 4rem;
+    padding-top: 4.5rem;
+}
+
+.mySkills h1 span{
+    color: var(--main-color);
+}
+
+.mySkills .container{
+    display: flex;
+    flex-direction: row;
+    max-width: 900rem;
+}
+
+.mySkills .container .table{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+}
+
+.mySkills .container .table .content{
+    border: 2px solid var(--main-color);
+    border-radius: 0.3rem;
+}
+
+.mySkills .container .table .content:hover{
+    background-color: var(--bg-color);
+    transition: 0.7s;
+}
+
+.table h3{
+    padding: 1rem 1rem;
+}
+
+.content .one{
+    padding: 1rem 1rem ;
+}
+
+.one .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem ;
+}
+
+.one .bar{
+    border: 0.1rem solid var(--main-color);
+    height: 2rem;
+    width: 30rem;
+    border-radius: 0.6rem;
+    padding: 0.4rem 0.4rem;
+}
+
+.one .bar span{
+    display: block;
+    background: var(--main-color);
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.table:nth-child(1) .one:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.table:nth-child(1) .one:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.table:nth-child(1) .one:nth-child(3) .bar span{
+    width: 65%;
+}
+
+.table:nth-child(1) .one:nth-child(4) .bar span{
+    width: 85%;
+}
+
+.table:nth-child(2) .one:nth-child(1) .bar span{
+    width: 95%;
+}
+
+.table:nth-child(2) .one:nth-child(2) .bar span{
+    width: 67%;
+}
+
+.table:nth-child(2) .one:nth-child(3) .bar span{
+    width: 85%;
+}
+
+.table:nth-child(2) .one:nth-child(4) .bar span{
+    width: 60%;
+}
+
+
+.contactMe h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0.6rem;
+}
+
+.contactMe h1 span{
+    color: var(--main-color);
+}
+
+.contactMe .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe .container form .line1{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box .input-field{
+    max-width: 900rem;
+    padding:0rem 1rem;
+    padding-bottom: 1rem;
+}
+.input-field input,
+.textarea-field textarea{
+    background: transparent;
+    color: var(--main-color);
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.3rem;
+    margin: 0.5rem 0.5rem ;
+    resize: none;
+    padding: 1rem 1rem;
+}
+
+.input-field input:hover,
+.textarea-field textarea:hover{
+    background-color: var(--second-bg-color);
+    transition: 0.6s;
+}
+
+.input-field input{
+    height: 3rem;
+    width: 20rem;
+}
+
+.textarea-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 44rem;
+}
+
+
+.input-field input::placeholder,
+.textarea-field textarea::placeholder{
+    color: white;
+}
+
+form .btn{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+form .btn button{
+    border-color: var(--main-color);
+    color: var(--second-bg-color);
+    background-color: var(--main-color);
+    font-size: 1.1rem;
+    padding:0.7rem 2.2rem;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    border: 0.1rem solid var(--main-color);
+    transition: 0.8s;
+}
+
+form .btn button:hover{
+    background-color: var(--bg-color);
+    transition: 0.6s;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Visible state when scrolled into view */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foot{
+    font-family: cursive;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(81,152,204,1) 100%);
+    display: flex;
+    justify-content: center;
+}
